@@ -51,6 +51,7 @@ public class Principal {
                         dni = tecla.next();
                         cliente = new Persona(nombre, apellidos, dni);
                         boolean seguir = false;
+                        
                         do {
                             System.out.print("Nuevo IBAN: ");
                             iban = tecla.next();
