@@ -9,17 +9,17 @@ package banco;
  * @author Raquel García
  */
 public abstract class CuentaBancaria implements Imprimible {
-
+/*Creo los atributos de clase, incluyendo un  asignación a una variable de tipo "Persona"*/
     private Persona titular;
     private double saldo;
     private String iban;
-
+/*Creo un constructor*/
     public CuentaBancaria(Persona titular, double saldo, String iban) {
         this.titular = titular;
         this.saldo = saldo;
         this.iban = iban;
     }
-
+/*metodos getter y setter*/
     public Persona getTitular() {
         return titular;
     }
@@ -43,7 +43,7 @@ public abstract class CuentaBancaria implements Imprimible {
     public void setIban(String iban) {
         this.iban = iban;
     }
-   /*creamos el metodo override denominado "devolverInfoString()" que sera llamado desde la 
+   /*creo el metodo override denominado "devolverInfoString()" que sera llamado desde la 
     inferface Imprimir.*/
     @Override
     public String devolverInfoString() {

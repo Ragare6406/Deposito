@@ -9,23 +9,17 @@ package banco;
  * @author Raquel García
  */
 public class Persona implements Imprimible {
-
+/*Creo los atributos de clase*/     
     private String nombre, apellidos, dni;
 
-    /*Creamos un constructor vacio*/
-    public Persona() {
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.dni = dni;
-    }
-
+/*Creo un constructor*/
     public Persona(String nombre, String apellidos, String dni) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dni = dni;
     }
 
-    /*Creo metodos setter y getter*/
+ /*Creo metodos setter y getter*/
     public String getNombre() {
         return nombre;
     }
@@ -49,7 +43,8 @@ public class Persona implements Imprimible {
     public void setDni(String dni) {
         this.dni = dni;
     }
-
+   /*creo el metodo override denominado "devolverInfoString()" que sera llamado desde la 
+    inferface Imprimir.*/
     @Override
     public String devolverInfoString() {
         return "Nombre:" + nombre + ", apellidos: " + apellidos + ", dni: " + dni;

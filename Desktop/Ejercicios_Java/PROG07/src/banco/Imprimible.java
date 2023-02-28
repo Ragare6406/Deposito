@@ -8,6 +8,7 @@ package banco;
  *
  * @author Miguel
  */
+/*Se define el metodo a implementar en las clases*/
 public interface Imprimible {
     public String  devolverInfoString();
   
